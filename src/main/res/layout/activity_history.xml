@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#872D8E"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="История покупок"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Текст если пусто -->
+    <TextView
+        android:id="@+id/empty_history_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вы ещё ничего не купили"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"/>
+
+    <!-- Список покупок -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Кнопка назад -->
+    <Button
+        android:id="@+id/back_to_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
