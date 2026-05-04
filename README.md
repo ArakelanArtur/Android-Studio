@@ -56,7 +56,6 @@ git clone https://github.com/ArakelanArtur/Android-Studio.git
 Нажмите зеленую кнопку Run (Shift + F10).
 
 # 📂 Структура репозитория
-Plaintext
 ├── app/
 │   ├── src/
 │   │   ├── main/
